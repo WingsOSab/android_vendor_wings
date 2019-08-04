@@ -194,6 +194,11 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/%/libfuse-lite.so \
     system/%/libntfs-3g.so
 
+
+# init rc file
+PRODUCT_COPY_FILES += \
+    vendor/wings/prebuilt/common/etc/init/init.wings-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.wings-system_ext.rc
+
 # Navbar Overlays
 PRODUCT_PACKAGES += \
     NavigationBarNoHintOverlay
