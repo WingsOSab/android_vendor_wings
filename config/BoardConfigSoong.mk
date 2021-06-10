@@ -34,6 +34,7 @@ SOONG_CONFIG_wingsGlobalVars += \
     camera_override_format_from_reserved \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
+    needs_camera_boottime \
     target_health_charging_control_charging_path \
     target_health_charging_control_charging_enabled \
     target_health_charging_control_charging_disabled \
@@ -91,6 +92,7 @@ TARGET_QTI_VIBRATOR_EFFECT_LIB ?= libqtivibratoreffect
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 
 # Soong value variables
+<<<<<<< HEAD
 SOONG_CONFIG_wingsGlobalVars_aapt_version_code := $(shell date -u +%Y%m%d)
 SOONG_CONFIG_wingsGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_wingsGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
@@ -104,6 +106,7 @@ SOONG_CONFIG_wingsGlobalVars_target_health_charging_control_supports_toggle := $
 SOONG_CONFIG_wingsGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_wingsGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
 SOONG_CONFIG_wingsGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
+SOONG_CONFIG_wingsGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_wingsQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
