@@ -32,6 +32,7 @@ SOONG_CONFIG_wingsGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
     camera_needs_client_info \
+    camera_needs_client_info_lib \
     camera_override_format_from_reserved \
     disable_bluetooth_le_read_buffer_size_v2 \
     disable_bluetooth_le_set_host_feature \
@@ -86,6 +87,8 @@ SOONG_CONFIG_wingsGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA
 SOONG_CONFIG_wingsGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS)
 SOONG_CONFIG_wingsGlobalVars_uses_legacy_fd_fbdev := $(TARGET_USES_LEGACY_FD_FBDEV)
 SOONG_CONFIG_wingsGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
+SOONG_CONFIG_wingsGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
+SOONG_CONFIG_wingsGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
@@ -118,7 +121,6 @@ SOONG_CONFIG_wingsGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_wingsGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
 SOONG_CONFIG_wingsGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
 SOONG_CONFIG_wingsGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
-SOONG_CONFIG_wingsGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 SOONG_CONFIG_wingsGlobalVars_disable_bluetooth_le_set_host_feature := $(TARGET_DISABLE_BLUETOOTH_LE_SET_HOST_FEATURE)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_wingsQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
