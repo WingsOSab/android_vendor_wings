@@ -8,3 +8,6 @@ include vendor/wings/config/BoardConfigSoong.mk
 
 # Certification
 include vendor/certification/BoardConfig.mk
+
+# Recovery
+BOARD_USES_FULL_RECOVERY_IMAGE ?= true
