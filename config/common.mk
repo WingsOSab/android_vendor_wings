@@ -191,7 +191,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    ThemedIconsOverlay
 
 # Translations
 CUSTOM_LOCALES += \
