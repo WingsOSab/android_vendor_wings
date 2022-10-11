@@ -128,6 +128,10 @@ SYSTEMUI_OPTIMIZE_JAVA ?= true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# BatteryStatsViewer
+PRODUCT_PACKAGES += \
+    BatteryStatsViewer
+
 # Blur Support
 ifeq ($(TARGET_SUPPORTS_BLUR),true)
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
