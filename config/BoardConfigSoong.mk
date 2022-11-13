@@ -33,6 +33,8 @@ SOONG_CONFIG_wingsGlobalVars += \
     bootloader_message_offset \
     camera_needs_client_info \
     camera_override_format_from_reserved \
+    disable_bluetooth_le_read_buffer_size_v2 \
+    disable_bluetooth_le_set_host_feature \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
     needs_camera_boottime \
@@ -117,6 +119,7 @@ SOONG_CONFIG_wingsGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_
 SOONG_CONFIG_wingsGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
 SOONG_CONFIG_wingsGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_wingsGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
+SOONG_CONFIG_wingsGlobalVars_disable_bluetooth_le_set_host_feature := $(TARGET_DISABLE_BLUETOOTH_LE_SET_HOST_FEATURE)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_wingsQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
