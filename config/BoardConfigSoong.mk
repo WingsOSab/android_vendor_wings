@@ -56,6 +56,7 @@ SOONG_CONFIG_wingsGlobalVars += \
     uses_miui_camera \
     uses_nothing_camera \
     uses_oplus_camera \
+    uses_oppo_camera \
     target_trust_usb_control_path \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable
@@ -96,6 +97,7 @@ SOONG_CONFIG_wingsGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_C
 SOONG_CONFIG_wingsGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_wingsGlobalVars_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
 SOONG_CONFIG_wingsGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
+SOONG_CONFIG_wingsGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
