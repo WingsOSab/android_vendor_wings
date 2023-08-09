@@ -109,11 +109,6 @@ PRODUCT_COPY_FILES += \
     vendor/wings/config/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
 endif
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig \
-    SimpleSettingsConfig
-
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
