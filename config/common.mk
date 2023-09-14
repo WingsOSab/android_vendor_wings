@@ -109,7 +109,9 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    product_charger_res_images
+    charger_res_images \
+    product_charger_res_images \
+    product_charger_res_images_vendor
 
 # Extra tools
 PRODUCT_PACKAGES += \
