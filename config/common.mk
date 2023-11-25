@@ -299,4 +299,7 @@ CUSTOM_LOCALES += \
 # Include Wings version
 include vendor/wings/config/version.mk
 
+#pixel fw
+$(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
