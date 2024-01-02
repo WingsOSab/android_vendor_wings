@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
     product_charger_res_images \
     product_charger_res_images_vendor
 
+# Cloned app exemption
+PRODUCT_COPY_FILES += \
+    vendor/wings/prebuilt/common/etc/sysconfig/preinstalled-packages-platform-wings-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-wings-product.xml
+
 # Extra tools
 PRODUCT_PACKAGES += \
     bash \
