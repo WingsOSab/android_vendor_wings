@@ -150,6 +150,9 @@ include vendor/wings/config/bootanimation.mk
 PRODUCT_PACKAGES += \
     BtHelper
 
+# Relax Broken Library Check
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Call Recording
 TARGET_CALL_RECORDING_SUPPORTED ?= true
 ifneq ($(TARGET_CALL_RECORDING_SUPPORTED),false)
