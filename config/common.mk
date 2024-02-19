@@ -110,6 +110,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
 
+# Omni styles
+PRODUCT_PACKAGES += \
+    OmniStyle
+
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
