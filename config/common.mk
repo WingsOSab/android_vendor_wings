@@ -290,7 +290,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/wings/overlay
+    vendor/wings/overlay \
     vendor/wings/overlay/common
 
 PRODUCT_PACKAGES += \
